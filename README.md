@@ -10,6 +10,8 @@
 
 The ultra-fast CLI companion for [Logseq](https://github.com/logseq/logseq) designed to speed up your note capture directly from the terminal!
 
+This `release/http-query` branch is the maintained fork line for the `yicone/lsq` HTTP query extensions. The `master` branch stays aligned with upstream, while this branch adds the read-only Logseq HTTP query workflow documented below.
+
 ## Why lsq?
 - ⚡️ Lightning-fast journal additions without leaving your terminal
 - ⌨️ Optimized for both quick captures and extended writing sessions
@@ -29,7 +31,7 @@ The ultra-fast CLI companion for [Logseq](https://github.com/logseq/logseq) desi
 ## Ready to Start?
 1. Install the binary via Go:
 ```bash
-go install github.com/jrswab/lsq@latest
+go install github.com/yicone/lsq@release/http-query
 ```
 2. Make sure you have the location of the Go binaries in your $PATH. Run `go env` and find the variable called `GOPATH`. Then copy that location to your shell's $PATH if it's not already there.
 
@@ -131,6 +133,8 @@ list item in Logseq. Use `-i 2` for two levels deep, and so on.
 
 ## HTTP Query
 `lsq query` adds read-only Logseq HTTP query support. It complements the core file-based CLI and currently works only against an active Logseq HTTP Server.
+
+This query support is maintained on the fork branch `release/http-query`; upstream `master` may not include it until those changes are accepted independently.
 
 ### Requirements
 - Logseq must be running.

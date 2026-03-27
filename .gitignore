@@ -20,6 +20,8 @@
 !CONTRIBUTING.md
 !CHANGELOG.md
 !LICENSE
+!docs/
+!docs/**
 
 # !Makefile
 
